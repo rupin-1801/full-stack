@@ -8,3 +8,14 @@
     height: 40vh;
     margin: 10px;
 }
+body{
+    background-color: antiquewhite;
+}
+.center{
+    text-align: center;
+    width: 100%;
+}
+.item{
+    width: 80vw;
+    padding: 10px 0px;
+}
