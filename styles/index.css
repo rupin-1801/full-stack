@@ -9,7 +9,7 @@
     margin: 10px;
 }
 body{
-    background-color: antiquewhite;
+    background-color: pink;
 }
 .center{
     text-align: center;
@@ -18,4 +18,8 @@ body{
 .item{
     width: 80vw;
     padding: 10px 0px;
+}
+.link{
+    color: royalblue;
+    text-decoration: none;
 }
