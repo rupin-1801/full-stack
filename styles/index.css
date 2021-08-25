@@ -16,6 +16,13 @@
 body{
     background-color: azure;
 }
+h1{
+    margin:16px;
+}
+ol{
+    padding-left: 40px;
+    margin:16px;
+}
 .center{
     text-align: center;
     width: 100%;
