@@ -98,16 +98,35 @@ ol{
     background-color: grey;
 }
 
-.m-10{
-    margin: 10px;
+.blue{
+    background-color: darkcyan;
+}
+
+.round{
+    border-radius: 5px;
+}
+.white{
+    background-color: white;
+}
+
+.m-5{
+    margin: 5px;
+}
+
+.p-5{
+    padding: 5px;
+}
+
+.my-5{
+    margin: 5px 0px;
 }
 
 .my-10{
     margin: 10px 0px;
 }
 
-.mx-10{
-    margin: 0px 10px;
+.mx-5{
+    margin: 0px 5px;
 }
 
 .text{
@@ -141,23 +160,24 @@ ol{
 }
 
 #main-content{
-    width: 45vw;
-    height: 45vw;
+    width: 48vw;
+    height: 600px;
     background-color: grey;
-    line-height: 45vw;
+    line-height: 600px;
+    margin-right: 5px;
 }
 
 #articles{
     display: flex;
-    height: 45vw;
-    width: 45vw;
+    height: 600px;
+    width: 48vw;
     flex-direction: column;
 }
 
 .my-article{
     width: inherit;
     height: inherit;
-    line-height: 14vw;
+    line-height: 180px;
     background-color: orangered;
 }
 
