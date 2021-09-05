@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0px; 
     margin: 0px;
+    scroll-behavior: smooth;
 }
 .image-container{
     display: flex;
@@ -13,8 +14,13 @@
     height: 40vh;
     margin: 10px;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
 body{
     background-color: azure;
+    height:fit-content;
 }
 h1{
     margin:16px;
@@ -47,7 +53,7 @@ ol{
     height: 100vh;
 }
 .cards{
-    width: 100vw;
+    width: calc(100vw-10px);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -91,11 +97,62 @@ ol{
 }
 
 /* assignment-7 */
-
 #header{
     height: 50px;
     line-height: 50px;
     background-color: grey;
+}
+.section-head{
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+}
+#banner{
+    height: 100vh;
+    line-height: 100vh;
+    background-color:turquoise;
+}
+.circle{
+    width: 150px;
+    height: 150px;
+    background-color: darkgoldenrod;
+    border-radius: 50%;
+}
+#main-content{
+    width: 48vw;
+    height: 600px;
+    background-color: grey;
+    line-height: 600px;
+    margin-right: 5px;
+}
+#articles{
+    display: flex;
+    height: 600px;
+    width: 48vw;
+    flex-direction: column;
+}
+
+.my-article{
+    width: inherit;
+    height: inherit;
+    line-height: 180px;
+    background-color: orangered;
+}
+#footer{
+    height: 100px;
+    line-height: 100px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    background-color: palevioletred;
+}
+/* 8 */
+#header-8{
+    height: 60px;
+    line-height: 50px;
+    background-color: royalblue;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
 }
 
 .blue{
@@ -116,6 +173,9 @@ ol{
 .p-5{
     padding: 5px;
 }
+.px-5{
+    padding: 0px 5px;
+}
 
 .my-5{
     margin: 5px 0px;
@@ -125,8 +185,8 @@ ol{
     margin: 10px 0px;
 }
 
-.mx-5{
-    margin: 0px 5px;
+.mx-10{
+    margin: 0px 10px;
 }
 
 .text{
@@ -135,50 +195,72 @@ ol{
     font-size: 20px;
 }
 
-#banner{
+#banner-8{
     height: 100vh;
-    line-height: 100vh;
-    background-color:turquoise;
+    font-size: 8vh;
+    padding:10vh;
+    line-height: 8vh;
+    background:url('./../images/mern-banner.jpg') no-repeat;
+    background-size: cover;
 }
 
-.section-head{
+.section-head-8{
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
     padding: 15px;
+    padding-top: 15vh;
+}
+#footer-s{
+    padding-top: 0px !important;
 }
 
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
-.circle{
-    width: 150px;
-    height: 150px;
-    background-color: darkgoldenrod;
+.circle-8{
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
+    margin:15vh 0px;
+    overflow: hidden;
+    border: 1px solid royalblue;
 }
-
-#main-content{
+.circle-8 img{
+    width: 20vw;
+}
+#main-content-8{
     width: 48vw;
-    height: 600px;
-    background-color: grey;
-    line-height: 600px;
+    height: 562px;
+    background-color: indianred;
+    text-align: justify;
     margin-right: 5px;
 }
-
-#articles{
+h2{
+    padding: 12px;
+}
+.project-p{
+    padding: 4vw 12px;
+}
+#articles-8{
     display: flex;
-    height: 600px;
+    height: 300px;
     width: 48vw;
     flex-direction: column;
 }
+.my-article-8:nth-child(2){
+    padding: 0px;
+    margin: 10px 0px;
+}
 
-.my-article{
-    width: inherit;
-    height: inherit;
-    line-height: 180px;
-    background-color: orangered;
+.my-article-8 img{
+    width: 48vw;
+    height: 180px;
+}
+
+.my-article-8:nth-child(2){
+    border: 1px solid black;
 }
 
 .box{
@@ -187,8 +269,41 @@ ol{
     background-color: red;
 }
 
-#footer{
-    height: 50px;
+.h-90{
+    height: 90vh;
+}
+.align-center{
+    align-items: center;
+}
+.flex{
+    display: flex;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.item{
+    list-style-type: none;
+}
+.link{
+    margin: 0px 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    color:white;
+    border-radius: 5px;
+}
+.link:hover{
+    background-color: white;
+    color: royalblue;
+}
+#main{
+    position: relative;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#footer-8{
+    height: 100px;
     line-height: 50px;
+    margin-bottom: 0px;
     background-color: palevioletred;
 }
