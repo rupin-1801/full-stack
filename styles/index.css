@@ -281,17 +281,17 @@ h2{
 .justify-around{
     justify-content: space-around;
 }
-.item{
+.item-8{
     list-style-type: none;
 }
-.link{
+.link-8{
     margin: 0px 10px;
     padding: 5px 10px;
     font-size: 20px;
     color:white;
     border-radius: 5px;
 }
-.link:hover{
+.link-8:hover{
     background-color: white;
     color: royalblue;
 }
