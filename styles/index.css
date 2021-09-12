@@ -55,16 +55,24 @@ ol{
 .cards{
     width: calc(100vw-10px);
     display: flex;
+    flex-wrap: wrap; 
+    overflow-wrap: normal;
     justify-content: space-evenly;
     align-items: center;
 }
 .card{
-    width: 20vw;
+    width: auto;
+    min-width: 220px;
+    max-width: 250px;
     height: 400px;
     padding: 20px;
     box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.14);
     border-radius: 10px;
     background-color: white;
+    margin: 20px;
+}
+.name{
+    padding: 0px;
 }
 .card > *{
     margin: 10px 0px;
@@ -139,6 +147,9 @@ ol{
     background-color: orangered;
 }
 #footer{
+    display: block;
+    position: absolute;
+    bottom: 0px;
     height: 100px;
     line-height: 100px;
     margin-bottom: 0px;
@@ -152,7 +163,7 @@ ol{
     background-color: royalblue;
     position: sticky;
     top: 0px;
-    z-index: 10;
+    z-index: 5;
 }
 
 .blue{
@@ -163,7 +174,7 @@ ol{
     border-radius: 5px;
 }
 .white{
-    background-color: white;
+    background-color: white !important;
 }
 
 .m-5{
@@ -197,9 +208,7 @@ ol{
 
 #banner-8{
     height: 100vh;
-    font-size: 8vh;
-    padding:10vh;
-    line-height: 8vh;
+    padding: 10vh;
     background:url('./../images/mern-banner.jpg') no-repeat;
     background-size: cover;
 }
@@ -220,15 +229,15 @@ ol{
 }
 
 .circle-8{
-    width: 20vw;
-    height: 20vw;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    margin:15vh 0px;
+    margin:15px 0px;
     overflow: hidden;
     border: 1px solid royalblue;
 }
 .circle-8 img{
-    width: 20vw;
+    width: 250px;
 }
 #main-content-8{
     width: 48vw;
@@ -270,7 +279,8 @@ h2{
 }
 
 .h-90{
-    height: 90vh;
+    height:fit-content;
+    min-height: 90vh;
 }
 .align-center{
     align-items: center;
@@ -306,4 +316,72 @@ h2{
     line-height: 50px;
     margin-bottom: 0px;
     background-color: palevioletred;
+}
+#circle-container{
+    flex-wrap: wrap;
+    margin: 15vh 0px;
+}
+.menu{
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    z-index: +6;
+    display :none;
+    transform: scale(2);
+}
+
+@media screen and (min-width : 768px) and (max-width : 1024px){
+    .section-head-8{
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width : 425px) and (max-width : 768px){
+    .section-head-8{
+        font-size: 30px;
+    }
+    .text{
+        font-size: medium;
+    }
+    #banner-8{
+        height: auto;
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .list{
+        flex-direction: column;
+        height: 50vh;
+        transform: translateX(110%);
+        background-color: rgba(0,0,0,0.9);
+        width: 100%;
+    }
+    .list:hover, .menu:hover + .list{
+        transform: translateX(0);
+        transition: 1s;
+    }
+    .list:focus {
+        transform: translateX(110%);
+    }
+    .menu{
+        z-index: +10;
+        height: 10px;
+        cursor: pointer;
+        display: block;
+    }
+}
+
+@media screen and (max-width : 425px){
+    .section-head-8{
+        font-size: 30px;
+    }
+    .text{
+        font-size: small;
+    }
+    #banner-8{
+        height: auto;
+        min-height: 400px;
+    }
 }
