@@ -1,59 +1,250 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/index.css">
-    <title>Assignment-4(practicals list page)</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical-12</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./styles/assignment-12.css">
 </head>
+
 <body>
-    <h1 class="center">Welcome to full stack course</h1>
-    <h2 class="center">List of all practicals</h2>
-    <ol id="list" type="1">
-        <li class="item">
-            Create Your First Web page using HTML Editor as well as Online Sandbox Environment.
-            <a class="link" href="assignments/assignment-1.html">Practical-1</a>
-        </li>
-        <li class="item">
-            Create a web page showing output as Html Structure using character Entities and span Tag.
-            <a class="link" href="assignments/assignment-2.html">Practical-2</a>
-        </li>
-        <li class="item">
-            Live your First Web-Page on Git-Hub.
-            <a class="link" href="assignments/assignment-3.html">Practical-3</a>
-        </li>
-        <li class="item">
-            Create a website having list of all practical and their individual practical Page links.
-            <a class="link" href="#">Practical-4</a>
-        </li>
-        <li class="item">
-            Create a Web-Page showing the use of Image-Map in the Web Application.
-            <a class="link" href="assignments/assignment-5.html">Practical-5</a>
-        </li>
-        <li class="item">
-            Create a Card Layout using CSS layout properties.
-            <a class="link" href="assignments/assignment-6.html">Practical-6</a>
-        </li>
-        <li class="item">
-            Create a Web Page Layout using div tags.
-            <a class="link" href="assignments/assignment-7.html">Practical-7</a>
-        </li>
-        <li class="item">
-            Create a Web Page having Fixed Navigation Bar with the given content.
-            <a class="link" href="assignments/assignment-8.html">Practical-8</a>
-        </li>
-        <li class="item">
-            Create a Responsive Web Layout with Responsive Navigation Bar.
-            <a class="link" href="assignments/assignment-9.html">Practical-9</a>
-        </li>
-        <li class="item">
-            Create a Responsive Side-Bar Navigation Menu.
-            <a class="link" href="assignments/assignment-10.html">Practical-10</a>
-        </li>
-        <li class="item">
-            Create a Responsive Footer Template.
-            <a class="link" href="assignments/assignment-11.html">Practical-11</a>
-        </li>
-    </ol>
+    <table class="practical-table">
+        <thead>
+            <tr>
+                <th colspan="5" class="main-heading">FullStack Live Practical Book</th>
+            </tr>
+            <tr class="column-heading">
+                <th>#</th>
+                <th>Practical Name</th>
+                <th>Link</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>
+                    Create a Web page including HTML basic skeleton using Offline HTML
+                    Editor and Online codepen environment.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-1.html">Practical-1</a>
+                </td>
+                <td>
+                    <input type="checkbox" class = "status" id="status-1" checked>
+                    <label for="status-1">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>
+                    Create a web page showing a basic html structure using character Entities and span Tag.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-2.html">Practical-2</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-2" checked>
+                    <label for="status-2">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>
+                    Live your First Web-Page on Git-Hub.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-3.html">Practical-3</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-3" checked>
+                    <label for="status-3">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>
+                    Create a website having list of all practical and their individual practical Page links.
+                </td>
+                <td class="deliver">
+                    <a href="./assignments/assignment-4.html">Practical-4</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-4" checked>
+                    <label for="status-4">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>
+                    Create a Web-Page showing the use of Image-Map in the Web Application.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-5.html">Practical-5</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-5" checked>
+                    <label for="status-5">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>
+                    Create a Card Layout using CSS layout properties.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-6.html">Practical-6</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-6" checked>
+                    <label for="status-6">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>
+                    Create a Web Page Layout using div tags.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-7.html">Practical-7</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-7" checked>
+                    <label for="status-7">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>8.</td>
+                <td>
+                    Create a Web Page having Fixed Navigation Bar with the given content.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-8.html">Practical-8</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-8" checked>
+                    <label for="status-8">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>9.</td>
+                <td>
+                    Create a Responsive Web Layout with Responsive Navigation Bar.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-9.html">Practical-9</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-9" checked>
+                    <label for="status-9">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>10.</td>
+                <td>
+                    Create a Responsive Side-Bar Navigation Menu.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-10.html">Practical-10</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-10" checked>
+                    <label for="status-10">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>11.</td>
+                <td>
+                    Create a Responsive Footer Template.
+                </td>
+                <td class="deliver">
+                    <a href="assignment-11.html">Practical-11</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-11" checked>
+                    <label for="status-11">Completed</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+            <tr>
+                <td>12.</td>
+                <td>
+                    Create a Table that represent Live Practical Book Records .
+                </td>
+                <td class="deliver">
+                    <a href="./index.html">Practical-12</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-12">
+                    <label for="status-12">Pending</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        let status = document.querySelectorAll(".status").forEach(item => {
+            item.addEventListener('change', event => {
+                if(item.nextElementSibling.innerHTML == "Completed"){
+                    item.nextElementSibling.innerHTML = "Pending";
+                }
+                else{
+                    item.nextElementSibling.innerHTML = "Completed";
+                }
+            })
+        })
+    </script>
 </body>
+
 </html>
