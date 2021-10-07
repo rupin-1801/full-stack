@@ -9,7 +9,7 @@ body {
 }
 .practical-table {
   border-collapse: collapse;
-  margin-top: 25px;
+  margin: 25px 0px;
   font-size: 0.9em;
   width: 100%;
   font-family: sans-serif;

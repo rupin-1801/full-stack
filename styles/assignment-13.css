@@ -1,0 +1,47 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #c8e6f8;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+table,
+caption {
+  background-color: white;
+  padding: 10px;
+}
+td, th {
+  padding: 10px 50px;
+  text-align: center;
+  border: none;
+  border: 1px solid rgb(255, 255, 2255);
+}
+.fa-check {
+  color: rgb(17, 192, 17);
+}
+.fa-times {
+  color: rgb(241, 12, 12);
+}
+.button{
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding: 5px;
+    color: white;
+    background-color: rgb(16, 43, 122);
+}
+.button:hover{
+    background-color:rgb(113, 16, 173);
+    cursor: pointer;
+}
+tr:nth-child(even), thead {
+  background: linear-gradient(
+    90deg,
+    rgb(216, 174, 243) 35%,
+    rgb(98, 208, 197) 70%
+  );
+}
