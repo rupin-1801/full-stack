@@ -12,7 +12,14 @@
 </head>
 
 <body>
-    <table class="practical-table">
+    <div class="container">
+        <div class="loader">
+        </div>
+        <b>
+            <p id="load">Loading your site </p>
+        </b>
+    </div>
+    <table id="main" class="practical-table">
         <thead>
             <tr>
                 <th colspan="5" class="main-heading">FullStack Live Practical Book</th>
@@ -36,7 +43,7 @@
                     <a href="assignment-1.html">Practical-1</a>
                 </td>
                 <td>
-                    <input type="checkbox" class = "status" id="status-1" checked>
+                    <input type="checkbox" class="status" id="status-1" checked>
                     <label for="status-1">Completed</label>
                 </td>
                 <td>
@@ -248,15 +255,46 @@
                     <a class="action"><i class="fa fa-trash"></i></a>
                 </td>
             </tr>
+            <tr>
+                <td>14.</td>
+                <td>
+                    Create a Counter Page using JavaScript as per the attached Templates.
+                </td>
+                <td class="deliver">
+                    <a href="./assignments/assignment-14.html">Practical-14</a>
+                </td>
+                <td>
+                    <input type="checkbox" class="status" id="status-14">
+                    <label for="status-14">Pending</label>
+                </td>
+                <td>
+                    <a class="action"><i class="fa fa-pencil"></i></i></a>
+                    <a class="action"><i class="fa fa-trash"></i></a>
+                </td>
+            </tr>
         </tbody>
     </table>
     <script type="text/javascript">
+        let main = document.getElementById("main");
+        let loader = document.getElementsByClassName("container")[0];
+        let load = document.getElementById("load");
+
+        setInterval(() => {
+            load.innerHTML = load.innerHTML + ".";
+        }, 1000);
+
+        setTimeout(() => {
+            main.style.display = "block";
+            loader.style.display = "none";
+            document.body.style.backgroundColor = "white";
+        }, 3500);
+
         let status = document.querySelectorAll(".status").forEach(item => {
             item.addEventListener('change', event => {
-                if(item.nextElementSibling.innerHTML == "Completed"){
+                if (item.nextElementSibling.innerHTML == "Completed") {
                     item.nextElementSibling.innerHTML = "Pending";
                 }
-                else{
+                else {
                     item.nextElementSibling.innerHTML = "Completed";
                 }
             })

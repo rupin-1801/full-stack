@@ -1,0 +1,40 @@
+body{
+    background-color: #749ae1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    width: 50vh;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+h1{
+    color: white;
+}
+#input{
+    color: white;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    width: 30px;
+}
+.counter-box{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    align-items: center;
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
